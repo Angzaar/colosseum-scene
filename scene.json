@@ -2,7 +2,7 @@
   "ecs7": true,
   "runtimeVersion": "7",
   "display": {
-    "title": "Angzaar Plaza Colosseum",
+    "title": "Angzaar Colosseum",
     "description": "",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
@@ -63,7 +63,7 @@
         "y": 3,
         "z": 108
       },
-      "cameraTarget":{
+      "cameraTarget": {
         "x": 48,
         "y": 25,
         "z": 86
@@ -77,5 +77,6 @@
   "featureToggles": {
     "voiceChat": "enabled",
     "portableExperiences": "enabled"
-  }
+  },
+  "name": "info-scene"
 }

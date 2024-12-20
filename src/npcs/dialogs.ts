@@ -86,3 +86,23 @@ export let welcomeDialog: Dialog[] = [
 		],
 	},
 ]
+
+export let iwbDialog: Dialog[] = [	
+	{
+		text: `Hello there! Would you like to check out the In World Builder toolset?`,
+        isQuestion: true,
+		buttons: [
+			{ label: `Learn More`, goToDialog: 1 },
+			{ label: `Visit`, goToDialog:-1, triggeredActions:()=>{
+				showDialogPanel(false)
+			} },
+            { label: `Close`, goToDialog: -1, triggeredActions:()=>{
+				showDialogPanel(false)
+			} },
+		],
+	},
+	{
+		text:"The In World Builder toolset is a no-code, no-deploy, real time collaboration building tool....all in world! Build with your friends multiplayer from a drag and drop catalog of over 6,000 assets! The IWB toolset is currently unavailable in Client 2.0, but available in the browser version of Decentraland.",
+		isEndOfDialog:true
+	}
+]

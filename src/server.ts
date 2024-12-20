@@ -4,7 +4,7 @@ import { connect } from "./helpers/connection"
 import { createNPCs } from "./npcs/npcs"
 import { initStreams, updateStreamReservations } from "./streams"
 
-export let serverRoom:string = "angzaar_plaza"
+export let serverRoom:string = "angzaar_plaza_colosseum"
 export let localUserId: string
 export let localUser:any
 export let data:any

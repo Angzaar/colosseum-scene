@@ -12,7 +12,7 @@ import { createNPCs } from './npcs/npcs'
 import { showAdminPanel } from './ui/admin'
 
 let groundModel = "assets/7f2f746c-98ce-4a47-bccc-d8d2d6161a0b.glb"
-let admins:string[] = ["0xaabe0ecfaf9e028d63cf7ea7e772cf52d662691a"]
+let admins:string[] = ["0xceba6b4186aae99bc8c3c467601bd344b1d62764"]
 
 export function main() {
   createGround()
@@ -85,7 +85,5 @@ async function createPlayer(hardwareData:any, player:any){
       // await setRealm(sceneJson, hardwareData.clientUri)
 
       joinServer()
-
-      // createNPCs()
   }
 }

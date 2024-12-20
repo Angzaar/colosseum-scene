@@ -1,6 +1,8 @@
 import { Color4, Quaternion, Vector3 } from "@dcl/sdk/math"
 import { SOUND_TYPES } from "./types"
 
+//npx sdk-commands deploy -t linker-server.decentraland.org --skip-validations true
+
 export let colorsLabels:string[] = [
     "Black",
     "Blue",
@@ -341,7 +343,8 @@ export default {
 
 let assets:string = "assets/"
 let containers:string = "1-way/"
-let platforms:string = "platforms"
+let platforms:string = "platforms/"
+let tents:string = 'dpmarkets/'
 
 export let models:any = {
     containers:{
@@ -352,14 +355,27 @@ export let models:any = {
         sage:assets + containers + "cpmarket-2x1_ext_sage.glb",
         sunburst:assets + containers + "cpmarket-2x1_ext_sunburst.glb",
         sunsteel:assets + containers + "cpmarket-2x1_ext_sunsteel.glb",
-        red:assets + containers + "cpmarket-2x1_ext_unavailable.glb",
-        green:assets + containers + "cpmarket-2x1_ext_available.glb",
+        // red:assets + containers + "cpmarket-2x1_ext_unavailable.glb",
+        // green:assets + containers + "cpmarket-2x1_ext_available.glb",
+    },
+    interiors:{
+        interiorDark:assets + containers + "cpmarket-2x1_int_dark.glb",
+        interiorGreen:assets + containers + "cpmarket-2x1_int_earth.glb",
+        interiorLight:assets + containers + "cpmarket-2x1_int_light.glb",
     },
     platforms:{
-        openbase:assets + platforms + "platforms/cpplatform-2x2-open-base.glb",
-        baseDown:assets + platforms + "platforms/cpplatform-2x2-open-down.glb",
-        baseSolid:assets + platforms + "platforms/cpplatform-2x2-open-base.glb",
-        baseOpen:assets + platforms + "platforms/cpplatform-2x2-open-no-arrows.glb",
-        smallBaseSolid:assets + platforms + "platforms/cpplatform-2x1-solid.glb"
+        openbase:assets + platforms + "cpplatform-2x2-open-base.glb",
+        baseDown:assets + platforms + "cpplatform-2x2-open-down.glb",
+        baseSolid:assets + platforms + "cpplatform-2x2-solid.glb",
+        baseOpen:assets + platforms + "cpplatform-2x2-open-no-arrows.glb",
+        smallBaseSolid:assets + platforms + "cpplatform-2x1-solid.glb"
+    },
+    tents:{
+        exteriors:{
+            bronze:assets + tents + "dpmarket_bronze.glb",
+            navy:assets + tents + "dpmarket_navy.glb",
+            sage:assets + tents + "dpmarket_sage.glb",
+        },
+        interior:assets + tents + "dpmarket_interior-default.glb"
     }
 }
