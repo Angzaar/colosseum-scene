@@ -95,6 +95,12 @@ export let iwbDialog: Dialog[] = [
 			{ label: `Learn More`, goToDialog: 1 },
 			{ label: `Visit`, goToDialog:-1, triggeredActions:()=>{
 				showDialogPanel(false)
+				try{
+					changeRealm({realm:"https://worlds.dcl-iwb.co/world/BuilderWorld.dcl.eth"})
+				}
+				catch(e){
+					console.log('error launching custom world server')
+				}
 			} },
             { label: `Close`, goToDialog: -1, triggeredActions:()=>{
 				showDialogPanel(false)
